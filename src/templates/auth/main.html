@@ -1,0 +1,110 @@
+{% extends './base.html' %} {% block title %}main{% endblock %} {% block
+customCSS %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/main.css') }}"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap"
+  rel="stylesheet"
+/>
+{% endblock %} {% block body %}
+
+<div class="prest">
+  <p>
+    Desde 2021, operamos sistemas de arbitraje que aprovechan las desviaciones
+    de precio de activos estables en los principales exchanges.
+  </p>
+</div>
+<div class="card">
+  <div class="sup">
+    <div class="sup1">
+      <div class="s1">
+        <img
+          class="icon2"
+          src="/static/icons/trade.png"
+          width="20px"
+          height="20px"
+        />
+      </div>
+      <div class="s2">
+        <p>ACTIVOS ARBITRADOS</p>
+      </div>
+      <div class="s3"><p>5</p></div>
+    </div>
+    <div class="sup1">
+      <div class="s1">
+        <img
+          class="icon2"
+          src="/static/icons/trade.png"
+          width="20px"
+          height="20px"
+        />
+      </div>
+      <div class="s2">
+        <p>RENTABILIDAD ANUALIZADA</p>
+      </div>
+
+      <div class="s3"><p>45.6%</p></div>
+    </div>
+    <div class="sup1">
+      <div class="s1">
+        <img
+          class="icon2"
+          src="/static/icons/trade.png"
+          width="20px"
+          height="20px"
+        />
+      </div>
+      <div class="s2">
+        <p>DRAWDOWN MÁXIMO SOPORTADO</p>
+      </div>
+      <div class="s3"><p>0.9%</p></div>
+    </div>
+    <div class="sup1">
+      <div class="s1">
+        <img
+          class="icon2"
+          src="/static/icons/trade.png"
+          width="20px"
+          height="20px"
+        />
+      </div>
+      <div class="s2">
+        <p>LIQUIDEZ SEMANAL</p>
+      </div>
+
+      <div class="s3"><p>100%</p></div>
+    </div>
+  </div>
+
+  <div class="inf">
+    <div class="inf1">
+      <div class="i1">VISION</div>
+      <div class="i2">
+        Brindar a nuestros inversores un vehículo de delta neutral que les
+        permita generar beneficio de manera consistente, en el entorno cripto.
+      </div>
+      <div class="i3">
+        <button class="b1">INVEST</button><button class="b2">SABER MAS</button>
+      </div>
+    </div>
+    <div class="inf1">
+      <div class="i1">QUÉ NOS DIFERENCIA</div>
+      <div class="i2">
+        <ul style="list-style-type: square">
+          <li>TRANSPARENCIA</li>
+          <li>SEGURIDAD</li>
+          <li>RENTABILIDAD</li>
+        </ul>
+      </div>
+      <div class="i3">
+        <button class="B1">INVEST</button><button class="B2">SABER MAS</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

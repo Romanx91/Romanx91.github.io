@@ -1,0 +1,78 @@
+{% extends './base.html' %} {% block title %}invest{% endblock %} {% block
+customCSS %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/invest.css') }}"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap"
+  rel="stylesheet"
+/>
+{% endblock %} {% block body %}
+<div class="prest">
+  <h2>INVESTOR INQUIRY</h2>
+</div>
+<div class="card">
+  <div class="divForm">
+    <h1>CREATE ACCOUNT</h1>
+    <form action="">
+      <div class="sup">
+        <div class="frm-group">
+          <label for="FIRST NAME">FIRST NAME</label>
+          <input type="text" id="FIRST NAME" required />
+        </div>
+        <div class="frm-group">
+          <label for="LAST NAME">LAST NAME</label>
+          <input type="text" id="LAST NAME" required />
+        </div>
+        <div class="frm-group">
+          <label for="EMAIL">EMAIL</label>
+          <input type="email" id="EMAIL" required />
+        </div>
+        <div class="frm-group">
+          <label for="CITYNAME">CITY NAME</label>
+          <input type="text" id="CITYNAME" required />
+        </div>
+        <div class="frm-group">
+          <label for="COMPANYNAME">COMPANY NAME</label>
+          <input type="text" id="COMPANYNAME" required />
+        </div>
+        <div class="frm-group">
+          <label for="JOBTITLE">JOB TITLE</label>
+          <input type="text" id="JOBTITLE" required />
+        </div>
+      </div>
+      <div class="inf">
+        <div class="frm-group">
+          <label for="PHONENUMBER">PHONE NUMBER</label>
+          <input type="text" id="PHONENUMBER" required />
+        </div>
+        <div class="frm-group">
+          <label for="INVESTORTYPE">INVESTOR TYPE</label>
+          <input type="text" id="INVESTORTYPE" required />
+        </div>
+        <div class="frm-group">
+          <label for=""
+            >How much capital are you looking to allocate to the funds?</label
+          >
+          <input type="text" id="textCapital" required />
+        </div>
+        <button type="submit" class="buttSub">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+  <div class="divText2">
+    <div class="divText">
+      <div class="titleT"><h1>PROTEIN CAPITAL ARBITRAGE</h1></div>
+      <div class="tex">
+        <p>
+          Brindar a nuestros inversores un vehículo de delta neutral que les
+          permita generar beneficio de manera consistente, en el entorno cripto.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

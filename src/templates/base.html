@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://blogfonts.com/css/aWQ9MjI5NDQ0JnN1Yj00NDQmYz1uJnR0Zj1OZW9HcmFtVHJpYWwtQmxhY2tFeHRlbmRlZEl0YWxpYy1CRjYzZWFmNWM3MDMyYWQub3RmJm49bmVvZ3JhbS10cmlhbA/NeoGram Trial.otf"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+    <title>{% block title %}{% endblock %}</title>
+    {% block customCSS %}{% endblock %}
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="navbar"
+        src="{{ url_for('static', filename='img/mundi.png') }}"
+      >
+        <div class="logo">
+          <img
+            class="mb-4"
+            src="{{ url_for('static', filename='img/logo.png')
+            }}"
+            alt=""
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="/faqs">FAQS</a></li>
+          <li><a href="/invest">INVETS</a></li>
+          <li><a href="/main">CONTACT</a></li>
+          <li><a href="/funds">FUNDS</a></li>
+          <li>
+            <div class="dropdown">
+              <a class="btn dropdown-toggle" href="#" id="dropdownLink">
+                ABOUT<img
+                  class="icon"
+                  src="{{ url_for('static', filename='icons/flecha.png') }}"
+                  alt="Arrow Down"
+                />
+              </a>
+              <ul class="dropdown-menu" id="dropdownMenu">
+                <li><a class="dropdown-item" href="/team">THE TEAM</a></li>
+                <li><a class="dropdown-item" href="/thefirm">THE FIRM</a></li>
+                <li><a class="dropdown-item" href="/main">CAREER</a></li>
+                <li><a class="dropdown-item" href="/main">CONTACT US</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="contV1">
+            <button class="login-button1" href="">LOGIN</button>
+            <button class="login-button2" href="">CREATE ACCOUNT</button>
+          </li>
+        </ul>
+        <div class="elip" style="display: flex; align-items: center">
+          <span>
+            <img
+              class="mb-4"
+              src="{{ url_for('static', filename='img/elip.png') }}"
+              alt=""
+              width="60"
+              height="60"
+          /></span>
+        </div>
+      </div>
+      <div class="loging">
+        <h1>LOG IN</h1>
+        <form action="">
+          <div class="cred">
+            <div class="frm-group">
+              <label for="EMAIL">EMAIL</label>
+              <input type="email" id="EMAIL" required />
+            </div>
+            <div class="frm-group">
+              <label for="PASSWORD">PASSWORD</label>
+              <input type="password" id="PASSWORD" required />
+            </div>
+          </div>
+          <button class="logB" type="submit">LOG IN</button>
+        </form>
+      </div>
+      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+      {% block body %} {% endblock %}
+
+      <div class="pie">
+        <div class="footer-links" style="display: flex; align-items: center">
+          <span>
+            <img
+              class="mb-4"
+              src="{{ url_for('static', filename='img/logo.png') }}"
+              alt=""
+              width="130"
+              height="60"
+          /></span>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="" class="linkss"><h1>Protein capital</h1></a>
+            </li>
+            <li><a href="/invest" class="linkss">INVETS</a></li>
+
+            <li><a href="/main" class="linkss">CONTACT</a></li>
+
+            <li><a href="/funds" class="linkss">FUNDS</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="" class="linkss"><h1>Legal</h1></a>
+            </li>
+            <li><a href="" class="linkss">Terminos y condiciones</a></li>
+
+            <li><a href="" class="linkss">Politicas de privacidad</a></li>
+
+            <li><a href="" class="linkss">Tratamiento de datos</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="" class="linkss"
+                ><h1>Social<br />Networks</h1>
+                <h1></h1
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

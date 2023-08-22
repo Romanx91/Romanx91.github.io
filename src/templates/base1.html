@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://blogfonts.com/css/aWQ9MjI5NDQ0JnN1Yj00NDQmYz1uJnR0Zj1OZW9HcmFtVHJpYWwtQmxhY2tFeHRlbmRlZEl0YWxpYy1CRjYzZWFmNWM3MDMyYWQub3RmJm49bmVvZ3JhbS10cmlhbA/NeoGram Trial.otf"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+    <title>{% block title %}{% endblock %}</title>
+    {% block customCSS %}{% endblock %}
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="" />
+      </div>
+      <div class="links">
+        <a href="">FAQS</a><a href="">INVEST</a><a href="">CONTACT</a
+        ><a href="">FUNDS</a>
+        <div class="about">
+            <p class="abuot1">
+            <img
+              class="img1"
+              src="{{ url_for('static', filename='icons/punto.png') }}"
+              alt=""
+            />ABOUT
+            <img
+              class="img2"
+              src="{{ url_for('static', filename='icons/arrow.png') }}"
+              alt=""
+            />
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li  class="dropdown-item" href="/team">THE TEAM</li>
+              <li  class="dropdown-item" href="/thefirm">THE FIRM</li>
+              <li class="dropdown-item" href="/main">CAREER</li>
+              <li class="dropdown-item" href="/main">CONTACT US</li>
+            </ul>
+          </p>
+        </div>
+        
+        <div class="loginCreate">
+          <p class="lg">LOGIN</p>
+          <p class="ct">CREATE ACCOUNT</p>
+          <img
+            src="{{ url_for('static', filename='img/Ellipse1.png') }}"
+            alt=""
+          />
+        </div>
+      </div>
+  
+    </div>
+    <div class="loging">
+        <div class="back">BACK</div>
+        <div class="logintitle">LOG IN</div>
+        <form action="">
+          <div class="cred">
+            <div class="frm-group">
+              <label for="EMAIL">EMAIL*</label>
+              <input type="email" id="EMAIL" required />
+            </div>
+            <div class="frm-group">
+              <label for="PASSWORD">PASSWORD*</label>
+              <input type="password" id="PASSWORD" required />
+            </div>
+          </div>
+          <button class="logB" type="submit">LOG IN</button>
+        </form>
+        <div class="pregunta">DID YOU FORGOT YOUR DETAILS?</div>
+      </div>
+      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% block body %} {% endblock %}
+    <div class="mid"></div>
+    <div class="pie">
+      <div class="logoPie">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="" />
+      </div>
+      <div class="contLink">
+        <div class="links1">
+          <a href="" class="tiLks">Protein capital</a>
+          <a href="/invest" class="sublks">INVETS</a>
+          <a href="/main" class="sublks">CONTACT</a>
+          <a href="/funds" class="sublks">FUNDS</a>
+        </div>
+        <div class="links2">
+          <a href="" class="tiLks">Legal</a>
+          <a href="" class="sublks">Terminos y condiciones</a>
+          <a href="" class="sublks">Politicas de privacidad</a>
+          <a href="" class="sublks">Tratamiento de datos</a>
+        </div>
+        <div class="links3">
+          <a href="" class="tiLks">Social<br />Networks</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

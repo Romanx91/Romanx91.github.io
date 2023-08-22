@@ -1,0 +1,161 @@
+{% extends './base.html' %} {% block title %}team{% endblock %} {% block
+customCSS %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/team.css') }}"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap"
+  rel="stylesheet"
+/>
+{% endblock %} {% block body %}
+
+<div class="prest">
+  <h2>THE FIRM</h2>
+  <p>Meet our team group</p>
+</div>
+<div class="cardTeam">
+  <div class="cards">
+    <div>
+      <img
+        class="tm-4"
+        src="{{ url_for('static', filename='img/Ellipse1.png') }}"
+        alt=""
+      />
+    </div>
+    <div class="carddecrip">
+      <p>David Sánchez Miralles</p>
+      <p>CEO ONOS LAB</p>
+      <br />
+      <p>
+        David tiene más de 10 años de experiencia como Quantitative Trader. Ha
+        co-fundado varias empresas dentro del ecosistema crypto, entre ellas se
+        encuentran Gamium y Beancy. Además, cuenta con experiencia como fundador
+        de empresas en el ecosistema financiero, como es el caso de IAKronos,
+        una empresa dedicada al desarrollo de algoritmos financieros.
+      </p>
+    </div>
+  </div>
+  <div class="cards">
+    <div>
+      <img
+        class="tm-4"
+        src="{{ url_for('static', filename='img/Ellipse2.png') }}"
+        alt=""
+      />
+    </div>
+    <div class="carddecrip">
+      <p>Miguel Payá</p>
+      <p>COO ONOS LAB</p>
+      <br />
+      <p>
+        Miguel Payá, Lead Developer con más de tres años de experiencia, se ha
+        destacado en el sector de las criptomonedas. Comenzó como programador
+        freelance, y se ha especializado en DevOps y tecnologías relacionadas a
+        las criptomonedas, impulsando la adopción de soluciones estratégicas
+        para infraestructuras críticas. Su liderazgo técnico y dedicación a la
+        investigación han propulsado el crecimiento y la eficiencia de su
+        equipo.
+      </p>
+    </div>
+  </div>
+  <div class="cards">
+    <div>
+      <img
+        class="tm-4"
+        src="{{ url_for('static', filename='img/Ellipse3.png') }}"
+        alt=""
+      />
+    </div>
+    <div class="carddecrip">
+      <p>José Maria Fonseca</p>
+      <p>Portfolio Manager</p>
+      <br />
+      <p>
+        José María es un ingeniero industrial especializado en finanzas. Ha
+        desarrollado su carrera en el sector de las telecomunicaciones y como
+        inversor privado de estrategias múltiples en una oficina familiar. Ha
+        estado invirtiendo activamente en el espacio criptográfico desde 2012 e
+        invirtió en varios proyectos a lo largo de los años, donde más de 4 de
+        ellos alcanzaron el estatus de unicornio. Es capaz de identificar
+        proyectos con alto potencial dentro del sector blockchain. Además, tiene
+        un profundo conocimiento y experiencia demostrada en el comercio de
+        derivados dentro del ecosistema criptográfico, lo que ha aumentado
+        significativamente los ingresos totales de su cartera.
+      </p>
+    </div>
+  </div>
+  <div class="cards">
+    <div>
+      <img
+        class="tm-4"
+        src="{{ url_for('static', filename='img/Ellipse4.png') }}"
+        alt=""
+      />
+    </div>
+    <div class="carddecrip">
+      <p>Joan Sosa Colomé</p>
+      <p>COO ONOS LAB</p>
+      <br />
+      <p>
+        Joan, licenciado en ingeniería informática, se incorporó al ecosistema
+        cripto hace 6 años, tiene experiencia como consultor en empresas
+        multinacionales dentro del ecosistema crypto. Experto en la integración
+        y automatización de estrategias de inversión y cofundador de multiples
+        empresas relacionadas con la tecnología blockchain.
+      </p>
+    </div>
+  </div>
+  <div class="cards">
+    <div>
+      <img
+        class="tm-4"
+        src="{{ url_for('static', filename='img/Ellipse5.png') }}"
+        alt=""
+      />
+    </div>
+    <div class="carddecrip">
+      <p>Alberto Gordo</p>
+      <p>CIO Protein Capital</p>
+      <br />
+      <p>
+        Alberto tiene más de 20 años de experiencia como Operador Independiente
+        de Acciones. Es socio fundador de Option Elements, una destacada empresa
+        de trading en España especializada en opciones financieras, dedicada a
+        brindar asesoramiento, capacitación y gestión de carteras. Alberto
+        cuenta con una sólida formación académica. Posee la certificación CFTe
+        (Federación Internacional de Analistas Técnicos), CBP (Profesional
+        Certificado de Bitcoin) y CAIA (Analista de Inversiones Alternativas
+        Acreditado, nivel 1).
+      </p>
+    </div>
+  </div>
+  <div class="cards">
+    <div>
+      <img
+        class="tm-4"
+        src="{{ url_for('static', filename='img/Ellipse6.png') }}"
+        alt=""
+      />
+    </div>
+    <div class="carddecrip">
+      <p>Ricardo Osorio</p>
+      <p>Portfolio Manager</p>
+      <br />
+      <p>
+        Ricardo es un Ingeniero Industrial con más de cinco años de experiencia
+        en inversión y trading de criptomonedas. Ha desarrollado una sólida
+        metodología de investigación que le permite mantenerse al tanto de las
+        tendencias e invertir en proyectos exitosos mientras están en etapa de
+        desarrollo, logrando ganancias substanciales. Gestiona de manera activa
+        una cartera de activos digitales tanto para sí mismo como para
+        inversionistas a través de una Sociedad de Propósito Especial (SPV) en
+        Curaçao, junto con Fernando Almiñana y Max Pizzorni.
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

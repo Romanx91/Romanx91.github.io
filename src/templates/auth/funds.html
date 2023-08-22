@@ -1,0 +1,76 @@
+{% extends './base.html' %} {% block title %}funds{% endblock %} {% block
+customCSS %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/funds.css') }}"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap"
+  rel="stylesheet"
+/>
+{% endblock %} {% block body %}
+
+<div class="prest">
+  <h2>FUNDS</h2>
+</div>
+<div class="card">
+  <div class="cardleft">
+    <div class="cL">
+      <div class="dviTitle"><h1>HOJA DE TÉRMINOS</h1></div>
+      <div class="listLt">
+        <ul>
+          <li>NOMBRE</li>
+          <li>TIPO DE INVERSOR</li>
+          <li>JURISDICCIÓN LEGAL</li>
+          <li>CÓDIGO ISIN BILLETERA</li>
+          <li>BOLETO MÍNIMO</li>
+          <li>COMISIÓN DE GESTIÓN</li>
+          <li>COMISIÓN DE RENTABILIDAD</li>
+          <li>TARIFA DE SALIDA</li>
+          <li>CÁLCULO DEL VALOR LIQUIDATIVO</li>
+          <li>LIQUIDEZ</li>
+          <li>AUDITORES</li>
+          <li>CUSTODIO</li>
+          <li>BANCO</li>
+          <li>ADMINISTRADOR</li>
+        </ul>
+      </div>
+      <div class="listRt">
+        <ul>
+          <li>PROTEIN CAPITAL ARBITRAGE</li>
+          <li>INVERSOR CALIFICADO</li>
+          <li>LUXEMBURGO</li>
+          <li>N/A</li>
+          <li>100.000 EUR</li>
+          <li>2%</li>
+          <li>20%</li>
+          <li>0%</li>
+          <li>MENSUAL</li>
+          <li>SEMANAL</li>
+          <li>COA</li>
+          <li>COINBASE</li>
+          <li>BBVA</li>
+          <li>PROTEIN CAPITAL</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="cardRight">
+    <div class="rT">
+      <div class="dviTitle"><h1>MÉTRICAS MVP</h1></div>
+      <div class="listCen">
+        <ul style="list-style-type: square">
+          <li>CAPITAL DE CLIENTES SOPORTADOS 2.5 M</li>
+          <li>
+            MÁXIMO CAPITAL SOPORTADO TEÓRICO CON LA TECNOLOGÍA ACTUAL 325M
+          </li>
+          <li>RENTABILIDAD HISTÓRICA ANUAL: 26% ANUAL</li>
+          <li>VOL MAX. TRANSACCIONADO MENSUAL 90M$</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
