@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.static_folder = 'static'
 
 
-@app.route('/prueba')
+@app.route('/')
 def prueba():
     return render_template('auth/prueba.html')
 
