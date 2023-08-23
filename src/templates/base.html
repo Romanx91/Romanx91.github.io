@@ -17,120 +17,151 @@
     {% block customCSS %}{% endblock %}
   </head>
   <body>
-    <div class="container">
-      <div
-        class="navbar"
-        src="{{ url_for('static', filename='img/mundi.png') }}"
-      >
-        <div class="logo">
+    <div class="nav">
+      <div class="logo" ><a href="/">
+        <img  src="{{ url_for('static', filename='img/logo.png') }}" alt="" /></a>
+      </div>
+      <div class="links">
+        <a href="/faqs">FAQS</a>
+        <a href="invest">INVEST</a>
+        <a href="">CONTACT</a>
+        <a href="/funds">FUNDS</a>
+        <div class="about">
+            <p class="abuot1">
+            <img
+              class="img1"
+              src="{{ url_for('static', filename='icons/punto.png') }}"
+              alt=""
+            />ABOUT
+            <img
+              class="img2"
+              src="{{ url_for('static', filename='icons/arrow.png') }}"
+              alt=""
+            />
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li  class="dropdown-item"><a href="/team">THE TEAM</a></li>
+              <li  class="dropdown-item"><a href="/thefirm">THE FIRM</a></li>
+              <li class="dropdown-item" ><a href="">CAREER</a></li>
+              <li class="dropdown-item" ></li><a href="">CONTACT US</a></li>
+            </ul>
+          </p>
+        </div>
+        
+        <div class="loginCreate">
+          <p class="lg">LOGIN</p>
+          <p class="ct">CREATE ACCOUNT</p>
           <img
-            class="mb-4"
-            src="{{ url_for('static', filename='img/logo.png')
-            }}"
+            src="{{ url_for('static', filename='img/Ellipse1.png') }}"
             alt=""
           />
         </div>
-        <ul class="nav-links">
-          <li><a href="/faqs">FAQS</a></li>
-          <li><a href="/invest">INVETS</a></li>
-          <li><a href="/main">CONTACT</a></li>
-          <li><a href="/funds">FUNDS</a></li>
-          <li>
-            <div class="dropdown">
-              <a class="btn dropdown-toggle" href="#" id="dropdownLink">
-                ABOUT<img
-                  class="icon"
-                  src="{{ url_for('static', filename='icons/flecha.png') }}"
-                  alt="Arrow Down"
-                />
-              </a>
-              <ul class="dropdown-menu" id="dropdownMenu">
-                <li><a class="dropdown-item" href="/team">THE TEAM</a></li>
-                <li><a class="dropdown-item" href="/thefirm">THE FIRM</a></li>
-                <li><a class="dropdown-item" href="/main">CAREER</a></li>
-                <li><a class="dropdown-item" href="/main">CONTACT US</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="contV1">
-            <button class="login-button1" href="">LOGIN</button>
-            <button class="login-button2" href="">CREATE ACCOUNT</button>
-          </li>
-        </ul>
-        <div class="elip" style="display: flex; align-items: center">
-          <span>
-            <img
-              class="mb-4"
-              src="{{ url_for('static', filename='img/elip.png') }}"
-              alt=""
-              width="60"
-              height="60"
-          /></span>
-        </div>
       </div>
-      <div class="loging">
-        <h1>LOG IN</h1>
+      <div class="prest">{% block prest %}{% endblock%}</div>
+      
+    </div>
+     <div class="loging">
+        <div class="back">BACK</div>
+        <div class="logintitle">LOG IN</div>
         <form action="">
           <div class="cred">
             <div class="frm-group">
-              <label for="EMAIL">EMAIL</label>
+              <label for="EMAIL">EMAIL*</label>
               <input type="email" id="EMAIL" required />
             </div>
             <div class="frm-group">
-              <label for="PASSWORD">PASSWORD</label>
+              <label for="PASSWORD">PASSWORD*</label>
               <input type="password" id="PASSWORD" required />
             </div>
           </div>
           <button class="logB" type="submit">LOG IN</button>
         </form>
+        <div class="pregunta">DID YOU FORGOT YOUR DETAILS?</div>
       </div>
       <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+      <div class="cuentacreada">
+        <div class="saludo">¡EN HORA BUENA CUENTA CREADA!</div>
+      <button class="ok">OK</button></div>
+
+
+    
+      <div class="createaccount">
+        <div class="divFormcreate">
+          <div class="Back">BACK</div>
+          <form action="">
+              <div class="titlecreate"><p>CREATE ACCOUNT</p></div>
+              <div class="didyou"><p>DID YOU FORGOT YOUR DETAILS?</p>
+                <button type="submit" class="buttLogin">LOG IN</button></div>
+            <div class="supcreate">
+              <div class="frm-groupcreate">
+                <label class="labelfor1create" for="FIRST NAME">FIRST NAME</label>
+                <input type="text" id="FIRST NAME" required />
+              </div>
+              <div class="frm-groupcreate">
+                <label class="labelfor1create" for="LAST NAME">LAST NAME</label>
+                <input type="text" id="LAST NAME" required />
+              </div>
+              <div class="frm-groupcreate">
+                <label class="labelfor1create" for="EMAIL">EMAIL</label>
+                <input type="email" id="EMAIL" required />
+              </div>
+              <div class="frm-groupcreate">
+                <label class="labelfor1create" for="CITYNAME">CITY NAME</label>
+                <input type="text" id="CITYNAME" required />
+              </div>
+              <div class="frm-groupcreate">
+                <label class="labelfor1create" for="COMPANYNAME">COMPANY NAME</label>
+                <input type="text" id="COMPANYNAME" required />
+              </div>
+              <div class="frm-groupcreate">
+                <label class="labelfor1create" for="JOBTITLE">JOB TITLE</label>
+                <input type="text" id="JOBTITLE" required />
+              </div>
+            </div>
+            <div class="infcreate">
+              <div class="frm-groupcreate">
+                <label class="labelfor1create" for="PHONENUMBER">PHONE NUMBER</label>
+                <input type="text" id="PHONENUMBER" required />
+              </div>
+              <div class="frm-groupcreate">
+                <label class="labelfor1create" for="INVESTORTYPE">INVESTOR TYPE</label>
+                <input type="text" id="INVESTORTYPE" required />
+              </div>
+              <div class="frm-groupcreate">
+                <label class="labelfor2create" for=""
+                  >How much capital are you looking to allocate to the funds?</label
+                >
+                <input type="text" id="textCapital" required />
+              </div>
+              <button type="submit" class="buttSub">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    
+ 
+    <div class="mid">
       {% block body %} {% endblock %}
-
-      <div class="pie">
-        <div class="footer-links" style="display: flex; align-items: center">
-          <span>
-            <img
-              class="mb-4"
-              src="{{ url_for('static', filename='img/logo.png') }}"
-              alt=""
-              width="130"
-              height="60"
-          /></span>
+    </div>
+    <div class="pie">
+      <div class="logoPie"><a href="/">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="" /></a>
+      </div>
+      <div class="contLink">
+        <div class="links1">
+          <a href="/" class="tiLks">Protein capital</a>
+          <a href="/invest" class="sublks">INVETS</a>
+          <a href="/main" class="sublks">CONTACT</a>
+          <a href="/funds" class="sublks">FUNDS</a>
         </div>
-        <div class="footer-links">
-          <ul>
-            <li>
-              <a href="" class="linkss"><h1>Protein capital</h1></a>
-            </li>
-            <li><a href="/invest" class="linkss">INVETS</a></li>
-
-            <li><a href="/main" class="linkss">CONTACT</a></li>
-
-            <li><a href="/funds" class="linkss">FUNDS</a></li>
-          </ul>
+        <div class="links2">
+          <a href="" class="tiLks">Legal</a>
+          <a href="" class="sublks">Terminos y condiciones</a>
+          <a href="" class="sublks">Politicas de privacidad</a>
+          <a href="" class="sublks">Tratamiento de datos</a>
         </div>
-        <div class="footer-links">
-          <ul>
-            <li>
-              <a href="" class="linkss"><h1>Legal</h1></a>
-            </li>
-            <li><a href="" class="linkss">Terminos y condiciones</a></li>
-
-            <li><a href="" class="linkss">Politicas de privacidad</a></li>
-
-            <li><a href="" class="linkss">Tratamiento de datos</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <ul>
-            <li>
-              <a href="" class="linkss"
-                ><h1>Social<br />Networks</h1>
-                <h1></h1
-              ></a>
-            </li>
-          </ul>
+        <div class="links3">
+          <a href="" class="tiLks">Social<br />Networks</a>
         </div>
       </div>
     </div>

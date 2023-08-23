@@ -1,8 +1,13 @@
 {% extends './base.html' %} {% block title %}thefirm{% endblock %} {% block
 customCSS %}
+
 <link
   rel="stylesheet"
-  href="{{ url_for('static', filename='css/thefirm.css') }}"
+  href="{{ url_for('static', filename='css2/base.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css2/thefirm2.css') }}"
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,38 +15,32 @@ customCSS %}
   href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap"
   rel="stylesheet"
 />
-{% endblock %} {% block body %}
-
-<div class="prest">
-  <h2>THE FIRM</h2>
+{% endblock %} {% block prest %}
+<div class="present">
+  <h2 style="margin: 0; font-weight: 700; font-size: 48px">THE FIRM</h2>
   <p>Meet our team group</p>
 </div>
+{% endblock%} {% block body %}
+
 <div class="card">
   <div class="cardTl">
-    <h1>
+    <h1 class="titlecard1">
       PROTEIN CAPITAL <br />
       ARBITRAGE
     </h1>
   </div>
   <div class="cardDesc">
-    surge de la asociación entre rotein Capital y ONOS Labs con el propósito de
-    establecer un fondo de inversión en el sector de las criptomonedas, enfocado
-    en aprovechar las ineficiencias mecánicas presentes en las stablecoins
-    dentro de los principales exchanges de criptomonedas. El objetivo de Protein
-    Capital Arbitrage es brindar a los inversores un vehículo que les permita
-    obtener ganancias de manera constante a lo largo del tiempo y con un bajo
-    nivel de riesgo.
+    surge de la asociación entre rotein Capital y ONOS <br />
+    Labs con el propósito de establecer un fondo de <br />
+    inversión en el sector de las criptomonedas, enfocado <br />
+    en aprovechar las ineficiencias mecánicas presentes en <br />
+    las stablecoins dentro de los principales exchanges de <br />
+    criptomonedas. El objetivo de Protein Capital Arbitrage <br />
+    es brindar a los inversores un vehículo que les permita <br />
+    obtener ganancias de manera constante a lo largo del <br />
+    tiempo y con un bajo nivel de riesgo.
   </div>
-  <div class="cardCd">
-    <span>
-      <img
-        class="mb-5"
-        src="{{ url_for('static', filename='img/Rectangle.png') }}"
-        alt=""
-        width="100%"
-        height="100%"
-    /></span>
-  </div>
+  <div class="cardCd"></div>
 </div>
 
 {% endblock %}

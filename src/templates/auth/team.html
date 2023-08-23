@@ -2,7 +2,11 @@
 customCSS %}
 <link
   rel="stylesheet"
-  href="{{ url_for('static', filename='css/team.css') }}"
+  href="{{ url_for('static', filename='css2/base.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css2/team2.css') }}"
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,12 +14,13 @@ customCSS %}
   href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap"
   rel="stylesheet"
 />
-{% endblock %} {% block body %}
-
-<div class="prest">
-  <h2>THE FIRM</h2>
+{% endblock %} {% block prest %}
+<div class="present">
+  <h2 style="margin: 0; font-weight: 700; font-size: 48px">THE FIRM</h2>
   <p>Meet our team group</p>
 </div>
+{% endblock%} {% block body %}
+
 <div class="cardTeam">
   <div class="cards">
     <div>
@@ -26,10 +31,10 @@ customCSS %}
       />
     </div>
     <div class="carddecrip">
-      <p>David Sánchez Miralles</p>
-      <p>CEO ONOS LAB</p>
+      <p class="nombre1">David Sánchez Miralles</p>
+      <p class="namepPosc">CEO ONOS LAB</p>
       <br />
-      <p>
+      <p class="descriperson">
         David tiene más de 10 años de experiencia como Quantitative Trader. Ha
         co-fundado varias empresas dentro del ecosistema crypto, entre ellas se
         encuentran Gamium y Beancy. Además, cuenta con experiencia como fundador
@@ -47,10 +52,10 @@ customCSS %}
       />
     </div>
     <div class="carddecrip">
-      <p>Miguel Payá</p>
-      <p>COO ONOS LAB</p>
+      <p class="nombre1">Miguel Payá</p>
+      <p class="namepPosc">COO ONOS LAB</p>
       <br />
-      <p>
+      <p class="descriperson">
         Miguel Payá, Lead Developer con más de tres años de experiencia, se ha
         destacado en el sector de las criptomonedas. Comenzó como programador
         freelance, y se ha especializado en DevOps y tecnologías relacionadas a
@@ -70,10 +75,10 @@ customCSS %}
       />
     </div>
     <div class="carddecrip">
-      <p>José Maria Fonseca</p>
-      <p>Portfolio Manager</p>
+      <p class="nombre1">José Maria Fonseca</p>
+      <p class="namepPosc">Portfolio Manager</p>
       <br />
-      <p>
+      <p class="descriperson">
         José María es un ingeniero industrial especializado en finanzas. Ha
         desarrollado su carrera en el sector de las telecomunicaciones y como
         inversor privado de estrategias múltiples en una oficina familiar. Ha
@@ -96,10 +101,10 @@ customCSS %}
       />
     </div>
     <div class="carddecrip">
-      <p>Joan Sosa Colomé</p>
-      <p>COO ONOS LAB</p>
+      <p class="nombre1">Joan Sosa Colomé</p>
+      <p class="namepPosc">COO ONOS LAB</p>
       <br />
-      <p>
+      <p class="descriperson">
         Joan, licenciado en ingeniería informática, se incorporó al ecosistema
         cripto hace 6 años, tiene experiencia como consultor en empresas
         multinacionales dentro del ecosistema crypto. Experto en la integración
@@ -117,10 +122,10 @@ customCSS %}
       />
     </div>
     <div class="carddecrip">
-      <p>Alberto Gordo</p>
-      <p>CIO Protein Capital</p>
+      <p class="nombre1">Alberto Gordo</p>
+      <p class="namepPosc">CIO Protein Capital</p>
       <br />
-      <p>
+      <p class="descriperson">
         Alberto tiene más de 20 años de experiencia como Operador Independiente
         de Acciones. Es socio fundador de Option Elements, una destacada empresa
         de trading en España especializada en opciones financieras, dedicada a
@@ -141,10 +146,10 @@ customCSS %}
       />
     </div>
     <div class="carddecrip">
-      <p>Ricardo Osorio</p>
-      <p>Portfolio Manager</p>
+      <p class="nombre1">Ricardo Osorio</p>
+      <p class="namepPosc">Portfolio Manager</p>
       <br />
-      <p>
+      <p class="descriperson">
         Ricardo es un Ingeniero Industrial con más de cinco años de experiencia
         en inversión y trading de criptomonedas. Ha desarrollado una sólida
         metodología de investigación que le permite mantenerse al tanto de las

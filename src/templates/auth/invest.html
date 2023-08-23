@@ -2,7 +2,11 @@
 customCSS %}
 <link
   rel="stylesheet"
-  href="{{ url_for('static', filename='css/invest.css') }}"
+  href="{{ url_for('static', filename='css2/base.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css2/invest2.css') }}"
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,51 +14,51 @@ customCSS %}
   href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap"
   rel="stylesheet"
 />
-{% endblock %} {% block body %}
-<div class="prest">
-  <h2>INVESTOR INQUIRY</h2>
+{% endblock %}{% block prest %}
+<div class="present">
+  <h2 style="margin: 0; font-weight: 700; font-size: 48px">INVESTOR INQUIRY</h2>
 </div>
+{% endblock%} {% block body %}
 <div class="card">
   <div class="divForm">
-    <h1>CREATE ACCOUNT</h1>
     <form action="">
       <div class="sup">
         <div class="frm-group">
-          <label for="FIRST NAME">FIRST NAME</label>
+          <label class="labelfor1" for="FIRST NAME">FIRST NAME</label>
           <input type="text" id="FIRST NAME" required />
         </div>
         <div class="frm-group">
-          <label for="LAST NAME">LAST NAME</label>
+          <label class="labelfor1" for="LAST NAME">LAST NAME</label>
           <input type="text" id="LAST NAME" required />
         </div>
         <div class="frm-group">
-          <label for="EMAIL">EMAIL</label>
+          <label class="labelfor1" for="EMAIL">EMAIL</label>
           <input type="email" id="EMAIL" required />
         </div>
         <div class="frm-group">
-          <label for="CITYNAME">CITY NAME</label>
+          <label class="labelfor1" for="CITYNAME">CITY NAME</label>
           <input type="text" id="CITYNAME" required />
         </div>
         <div class="frm-group">
-          <label for="COMPANYNAME">COMPANY NAME</label>
+          <label class="labelfor1" for="COMPANYNAME">COMPANY NAME</label>
           <input type="text" id="COMPANYNAME" required />
         </div>
         <div class="frm-group">
-          <label for="JOBTITLE">JOB TITLE</label>
+          <label class="labelfor1" for="JOBTITLE">JOB TITLE</label>
           <input type="text" id="JOBTITLE" required />
         </div>
       </div>
       <div class="inf">
         <div class="frm-group">
-          <label for="PHONENUMBER">PHONE NUMBER</label>
+          <label class="labelfor1" for="PHONENUMBER">PHONE NUMBER</label>
           <input type="text" id="PHONENUMBER" required />
         </div>
         <div class="frm-group">
-          <label for="INVESTORTYPE">INVESTOR TYPE</label>
+          <label class="labelfor1" for="INVESTORTYPE">INVESTOR TYPE</label>
           <input type="text" id="INVESTORTYPE" required />
         </div>
         <div class="frm-group">
-          <label for=""
+          <label class="labelfor2" for=""
             >How much capital are you looking to allocate to the funds?</label
           >
           <input type="text" id="textCapital" required />
@@ -68,8 +72,11 @@ customCSS %}
       <div class="titleT"><h1>PROTEIN CAPITAL ARBITRAGE</h1></div>
       <div class="tex">
         <p>
-          Brindar a nuestros inversores un vehículo de delta neutral que les
-          permita generar beneficio de manera consistente, en el entorno cripto.
+          Brindar a nuestros <br />
+          inversores un vehículo de <br />delta neutral que les permita
+          <br />generar beneficio de manera <br />consistente, en el entorno
+          <br />
+          cripto.
         </p>
       </div>
     </div>

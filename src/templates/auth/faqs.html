@@ -2,7 +2,11 @@
 customCSS %}
 <link
   rel="stylesheet"
-  href="{{ url_for('static', filename='css/faqs.css') }}"
+  href="{{ url_for('static', filename='css2/base.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css2/faq2.css') }}"
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,51 +14,63 @@ customCSS %}
   href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap"
   rel="stylesheet"
 />
-{% endblock %} {% block body %}
-  <div class="prest">
-    <h2>FAQS</h2>
-    <p>Preguntas mas frecuentes acerda de la plataforma</p>
+{% endblock %}{% block prest %}
+<div class="present">
+  <h2 style="margin: 0; font-weight: 700; font-size: 48px">FAQS</h2>
+  <p>Preguntas mas frecuentes acerda de la plataforma</p>
+</div>
+{% endblock%} {% block body %}
+
+<div class="card">
+  <div class="cardRt">
+    <div class="texRt">
+      <h1 class="titl">PROTEIN CAPITAL <br />ARBITRAGE</h1>
+      <p class="subtitl">
+        Consulte aquí cualquier duda que tenga <br />sobre el funcionamiento de
+        la plataforma
+      </p>
+    </div>
+    <div class="butRt">
+      <button class="creatPr">HACER UNA PREGUNTA</button>
+    </div>
   </div>
-  <div class="card">
-    <div class="cardRt">
-      <div class="texRt">
-        <h1>PROTEIN CAPITAL ARBITRAGE</h1>
-        <p>Consulte aquí cualquier duda que tenga sobre el funcionamiento de la plataforma</p>
-      </H1>
-    </div>
-      <div class="butRt">
-        <button class="creatPr">HACER UNA PREGUNTA</button>
-      </div>
-    </div>
-    <div class="cardLt">
-      <div class="cardLt">
-        <div class="texLt"><h1>QUESTION</h1>
-        <h2>¿Cómo Opera el fondo?</h2>
-        <p>A continuación, se explicará cuál es la lógica de funcionamiento de los algoritmos de Protein Capital Arbitrage
-          En el gráfico se muestra el activo USDC/USD cotizado en Binance. USDC es una stablecoin que representa el
-          dólar, por lo que su paridad debería ser continua.<br>
-          Por otro lado, está USD, que es la moneda Fiat, también disponible en el exchange.
-          En el gráfico se puede observar cómo el valor de USDC en relación a USD no es estable y presenta variaciones,
-          aunque teóricamente no debería haberlas. Estas fluctuaciones son lo que los algoritmos de Protein Capital Arbitrage explotan para generar beneficios.<br>
-          Aunque USDC debería mantenerse siempre en una relación de 1 a 1 con el dólar, en el gráfico se pueden
-          observar algunos días con desviaciones superiores al 2%.
-          Es importante tener en cuenta que estas desviaciones son momentáneas, ya que USDC está
-          colateralizada y regulada. Puedes obtener más información sobre su respaldo y regulación en el siguiente
-          enlace:
-          <a href="https://www.circle.com/en/usdc">https://www.circle.com/en/usdc Leer más...</a>
-          
-        </p>
-        <div class="barraconT">
-          <div class="pregunta">
-            <p>¿Te resultó útil la información?</p>
-          </div> 
-            <div class="btSiNo">
-              <button class="btSi">SI</button>
-              <button class="btNo">NO</button>
-            </div>
-          </div>
+  <div class="cardLt">
+    <div class="texLt">
+      <h1 class="titleQ">Question</h1>
+      <h2 class="subTitle2">¿Cómo Opera el fondo?</h2>
+      <p class="contenido1">
+        A continuación, se explicará cuál es la lógica de funcionamiento de los
+        algoritmos de Protein Capital Arbitrage En el gráfico se muestra el
+        activo USDC/USD cotizado en Binance. USDC es una stablecoin que
+        representa el dólar, por lo que su paridad debería ser continua.<br />
+        <br />
+        Por otro lado, está USD, que es la moneda Fiat, también disponible en el
+        exchange. En el gráfico se puede observar cómo el valor de USDC en
+        relación a USD no es estable y presenta variaciones, aunque teóricamente
+        no debería haberlas. Estas fluctuaciones son lo que los algoritmos de
+        Protein Capital Arbitrage explotan para generar beneficios.<br />
+        <br />
+        Aunque USDC debería mantenerse siempre en una relación de 1 a 1 con el
+        dólar, en el gráfico se pueden observar algunos días con desviaciones
+        superiores al 2%. Es importante tener en cuenta que estas desviaciones
+        son momentáneas, ya que USDC está colateralizada y regulada. Puedes
+        obtener más información sobre su respaldo y regulación en el siguienter
+        <br />
+        enlace: <br />
+        <a href="https://www.circle.com/en/usdc"
+          >https://www.circle.com/en/usdc </a
+        >Leer más...
+      </p>
+      <div class="barraconT">
+        <div class="pregunta2">
+          <p class="preg1">¿Te resultó útil la información?</p>
+        </div>
+        <div class="btSiNo">
+          <button class="btSi">SI</button>
+          <button class="btNo">NO</button>
         </div>
       </div>
     </div>
   </div>
+</div>
 {% endblock %}

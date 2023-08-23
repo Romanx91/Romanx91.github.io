@@ -1,0 +1,111 @@
+.present {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 749px;
+  height: 150px;
+  font-family: "neogram-trial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  font-size: 24px;
+  color: #f9f9f9;
+  flex-direction: column;
+}
+
+.tm-4 {
+  margin-top: 28px;
+  width: 190px;
+  height: 190px;
+}
+.cardTeam {
+  flex-shrink: 0;
+  font-family: "neogram-trial", sans-serif;
+  display: flex;
+  width: calc(100% - 70px);
+  height: 1023px;
+  border-radius: 16px;
+  margin: -65px 35px;
+  background: #fefefe;
+  box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  justify-content: unset;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.nombre1 {
+  margin: 0;
+  color: #353535;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.namepPosc {
+  margin: 0;
+  color: #010101;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.descriperson {
+  margin: 0;
+  color: #010101;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cards {
+  margin-left: 27px;
+  font-family: "neogram-trial", sans-serif;
+  margin-top: 0%;
+  height: 33%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.cardTl {
+  font-family: "neogram-trial", sans-serif;
+  text-align: center;
+  display: flex;
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 18vw;
+  height: 129px;
+  flex-shrink: 0;
+  color: #010101;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-style: normal;
+  justify-content: space-evenly;
+}
+
+.cardDesc {
+  font-family: "neogram-trial", sans-serif;
+  display: flex;
+  width: 31vw;
+  height: 28vw;
+  margin-top: 15%;
+  margin-left: -19%;
+  font-style: normal;
+}
+
+.carddecrip {
+  font-family: "neogram-trial", sans-serif;
+  margin-top: 35px;
+  display: flex;
+  width: 69%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}

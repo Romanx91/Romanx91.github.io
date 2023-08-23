@@ -1,0 +1,89 @@
+.present {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 749px;
+  height: 150px;
+  font-family: "neogram-trial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  font-size: 24px;
+  color: #f9f9f9;
+  flex-direction: column;
+}
+
+.card {
+  overflow: hidden;
+
+  flex-shrink: 0;
+  font-family: "neogram-trial", sans-serif;
+  display: flex;
+  width: calc(100% - 70px);
+  height: 1023px;
+  border-radius: 16px;
+  margin: -65px 35px;
+  background: #fefefe;
+  box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cardTl {
+  width: 514px;
+  height: 81px;
+  flex-shrink: 0;
+  margin-top: 220px;
+  margin-left: 104px;
+
+  /* display: flex; */
+
+  /* justify-content: space-evenly; */
+}
+.titlecard1 {
+  font-family: "neogram-trial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-transform: capitalize;
+  color: #010101;
+  font-size: 40px;
+}
+
+.cardDesc {
+  margin-left: 104px;
+  margin-top: 62px;
+  font-family: "neogram-trial", sans-serif;
+  display: flex;
+  /* width: 31vw; */
+  /* height: 28vw; */
+  /* margin-top: 12%; */
+  /* margin-left: -19%; */
+  color: #010101;
+  /* font-size: 1.5vw; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 619px;
+  height: 273px;
+  flex-shrink: 0;
+}
+
+.cardCd {
+  background: url(../img/Rectangle.png);
+  margin-top: -247px;
+  margin-left: 1050px;
+  /* font-family: "neogram-trial", sans-serif; */
+  display: flex;
+  /* width: 42vw; */
+  /* margin-top: 12vw; */
+  /* margin-left: 7vw; */
+  width: 506px;
+  height: 160px;
+  flex-shrink: 0;
+  /* height: 14vw; */
+  flex-direction: column;
+  flex-wrap: nowrap;
+}

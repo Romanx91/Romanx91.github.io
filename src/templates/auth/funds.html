@@ -2,7 +2,11 @@
 customCSS %}
 <link
   rel="stylesheet"
-  href="{{ url_for('static', filename='css/funds.css') }}"
+  href="{{ url_for('static', filename='css2/base.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css2/funds2.css') }}"
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,48 +14,77 @@ customCSS %}
   href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap"
   rel="stylesheet"
 />
-{% endblock %} {% block body %}
-
-<div class="prest">
-  <h2>FUNDS</h2>
+{% endblock %} {% block prest %}
+<div class="present">
+  <h2 style="font-weight: 700; font-size: 48px">FUNDS</h2>
 </div>
+{% endblock%} {% block body %}
+
 <div class="card">
   <div class="cardleft">
     <div class="cL">
-      <div class="dviTitle"><h1>HOJA DE TÉRMINOS</h1></div>
+      <div class="dviTitle">
+        <h1 style="font-size: 40px">HOJA DE TÉRMINOS</h1>
+      </div>
       <div class="listLt">
         <ul>
           <li>NOMBRE</li>
+
           <li>TIPO DE INVERSOR</li>
+
           <li>JURISDICCIÓN LEGAL</li>
+
           <li>CÓDIGO ISIN BILLETERA</li>
+
           <li>BOLETO MÍNIMO</li>
+
           <li>COMISIÓN DE GESTIÓN</li>
+
           <li>COMISIÓN DE RENTABILIDAD</li>
+
           <li>TARIFA DE SALIDA</li>
+
           <li>CÁLCULO DEL VALOR LIQUIDATIVO</li>
+
           <li>LIQUIDEZ</li>
+
           <li>AUDITORES</li>
+
           <li>CUSTODIO</li>
+
           <li>BANCO</li>
+
           <li>ADMINISTRADOR</li>
         </ul>
       </div>
       <div class="listRt">
         <ul>
           <li>PROTEIN CAPITAL ARBITRAGE</li>
+
           <li>INVERSOR CALIFICADO</li>
+
           <li>LUXEMBURGO</li>
+
           <li>N/A</li>
+
           <li>100.000 EUR</li>
+
           <li>2%</li>
+
           <li>20%</li>
+
           <li>0%</li>
+
           <li>MENSUAL</li>
+
           <li>SEMANAL</li>
+
           <li>COA</li>
+
           <li>COINBASE</li>
+
           <li>BBVA</li>
+
           <li>PROTEIN CAPITAL</li>
         </ul>
       </div>
@@ -59,15 +92,28 @@ customCSS %}
   </div>
   <div class="cardRight">
     <div class="rT">
-      <div class="dviTitle"><h1>MÉTRICAS MVP</h1></div>
+      <div class="dviTitle"><h1 style="font-size: 40px">MÉTRICAS MVP</h1></div>
       <div class="listCen">
-        <ul style="list-style-type: square">
-          <li>CAPITAL DE CLIENTES SOPORTADOS 2.5 M</li>
+        <ul style="list-style-type: none">
           <li>
-            MÁXIMO CAPITAL SOPORTADO TEÓRICO CON LA TECNOLOGÍA ACTUAL 325M
+            <img class="imk" src="/static/icons/cuadrado.png" />CAPITAL DE
+            CLIENTES SOPORTADOS 2.5 M
           </li>
-          <li>RENTABILIDAD HISTÓRICA ANUAL: 26% ANUAL</li>
-          <li>VOL MAX. TRANSACCIONADO MENSUAL 90M$</li>
+          <li>
+            <img class="imk" src="/static/icons/cuadrado.png" />MÁXIMO CAPITAL
+            SOPORTADO TEÓRICO <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;CON LA TECNOLOGÍA ACTUAL 325M
+          </li>
+          <li>
+            <img class="imk" src="/static/icons/cuadrado.png" />
+            RENTABILIDAD HISTÓRICA ANUAL: 26%
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;ANUAL
+          </li>
+          <li>
+            <img class="imk" src="/static/icons/cuadrado.png" />VOL MAX.
+            TRANSACCIONADO MENSUAL <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;90M$
+          </li>
         </ul>
       </div>
     </div>
